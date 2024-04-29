@@ -237,6 +237,12 @@ body {
   align-items: center;
 }
 
+.tenn {
+  position: relative;
+  top: 161px;
+  margin-right: 204px;
+}
+
 .pictures {
   height: 40vh;
   display: flex;
@@ -252,7 +258,9 @@ body {
 }
 
 .in {
+  margin-left: -136px;
   font-size: 15px;
+  margin-top: 165px;
 }
 
 .review {
@@ -590,7 +598,7 @@ i {
     margin-right: 45px;
   }
   p {
-    margin-left: 40px;
+    margin-left: 3px;
     font-size: 13px;
   }
 }
