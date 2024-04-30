@@ -8,7 +8,7 @@
   src: url("/project font/SourceSans3-Regular.ttf");
 }
 body {
-  font-family: "Mycustomfont", Source sans pro;
+  font-family: "Mycustomfont";
 }
 
 .banner {
@@ -435,7 +435,7 @@ i {
 }
 @media only screen and (max-width: 576px) {
   .body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .banner {
     height: 50vh;
