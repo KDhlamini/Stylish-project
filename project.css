@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Mycustomfont";
-  src: url("/project font/SourceSans3-Regular.ttf");
+  src: url("project font/SourceSans3-Regular.ttf");
 }
 body {
   font-family: "Mycustomfont";
@@ -300,7 +300,7 @@ body {
 }
 
 .map {
-  background-image: url(/img/WhatsApp\ Image\ 2024-04-23\ at\ 10.17.39_26685a65.jpg);
+  background-image: url(img/WhatsApp\ Image\ 2024-04-23\ at\ 10.17.39_26685a65.jpg);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
