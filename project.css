@@ -94,6 +94,11 @@ body {
   color: white;
 }
 
+.port {
+  color: white;
+  font-size: 2px;
+}
+
 .topick {
   color: #ecb807;
   display: flex;
@@ -173,8 +178,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
   color: white;
 }
 .box in {
@@ -189,8 +193,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
   color: white;
 }
 .box2 in {
@@ -205,8 +208,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
   color: white;
 }
 .box3 in {
@@ -221,8 +223,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
   color: white;
 }
 .box4 in {
@@ -238,9 +239,8 @@ body {
 }
 
 .tenn {
-  position: relative;
-  top: 161px;
-  margin-right: 204px;
+  padding-left: 20px;
+  font-size: 12px;
 }
 
 .pictures {
@@ -258,9 +258,9 @@ body {
 }
 
 .in {
-  margin-left: -136px;
-  font-size: 15px;
-  margin-top: 165px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  font-weight: 500;
 }
 
 .review {
@@ -278,11 +278,15 @@ body {
   padding: 30px;
 }
 .buttons .ba1 {
-  width: 70px;
+  width: 120px;
+  font-family: "Mycustomfont";
+  font-family: bold;
 }
 .buttons .ba2 {
-  width: 80px;
+  width: 120px;
   margin-left: 20px;
+  font-family: "Mycustomfont";
+  font-weight: bold;
 }
 
 .first {
@@ -305,29 +309,36 @@ body {
 }
 
 .footer {
-  margin-top: 70px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
 }
-.footer i {
-  margin-left: 30px;
-}
-.footer .lyon {
-  display: flex;
+.footer .black {
   align-content: center;
-  height: 33px;
-  width: 33px;
-  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(20, 125, 151);
+  border-radius: 50%;
+  text-align: center;
+}
+.footer .white {
+  font-size: 35px;
+  color: white;
 }
 .footer p {
-  margin-left: 25px;
+  font-size: 15px;
+  margin-top: 10px;
 }
 .footer .socialmedia {
   display: flex;
+  justify-content: space-between;
+}
+.footer .face {
+  font-size: 25px;
 }
 
 .clickme {
@@ -347,8 +358,6 @@ body {
 .ba1 {
   width: 120px;
   height: 40px;
-  background-color: white;
-  border-radius: 3px;
   justify-content: center;
   align-items: center;
 }
@@ -361,6 +370,12 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 
 i {
@@ -388,12 +403,16 @@ i {
 }
 
 .overlay-content {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
   position: center;
   top: 25%;
   width: 100%;
   text-align: center;
   margin-top: 188px;
-  margin-left: 115px;
+  margin-left: 550px;
 }
 
 .overlay a {
@@ -428,11 +447,6 @@ i {
     right: 35px;
   }
 }
-@media only screen and (min-width: 576px) {
-  .menu {
-    display: none;
-  }
-}
 @media only screen and (max-width: 576px) {
   .body {
     overflow: hidden;
@@ -444,7 +458,19 @@ i {
   .banner .menu {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5px;
+  }
+  .banner .overlay-content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    position: center;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 188px;
+    margin-left: 135px;
   }
   h1 {
     font-size: 32px;
@@ -591,17 +617,26 @@ i {
     align-items: center;
     justify-content: space-evenly;
   }
-  .footer i {
+  .footer .black{
+    height: 40px;
+    width: 40px;
+  }
+  .footer .white {
+    font-size: 18px;
+    
+  }
+  .footer .i {
     margin-left: 30px;
+    font-size: 20px;
   }
-  .socialmedia {
-    margin-right: 45px;
-  }
-  p {
+  /* .socialmedia {
+    /* margin-right: 45px; */
+  } */
+  .p {
     margin-left: 3px;
     font-size: 13px;
   }
-}
+
 @media only screen and (min-width: 578px) and (max-width: 768px) {
   .body {
     overflow-x: hidden;
@@ -745,7 +780,7 @@ i {
     overflow-x: hidden;
   }
   .banner {
-    height: 50vh;
+    height: 35vh;
   }
   .banner h1 {
     font-size: 85px;
@@ -863,8 +898,8 @@ i {
     height: 35vh;
   }
   .footer {
-    margin-top: 70px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -874,10 +909,8 @@ i {
   .footer i {
     margin-left: 30px;
   }
-  .footer .socialmedia {
-    margin-right: 30px;
-  }
+  
   .footer p {
-    margin-left: 22px;
+    font-size: 30px;
   }
 }/*# sourceMappingURL=project.css.map */
